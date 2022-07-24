@@ -1,10 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html,
 body {
   width: 100%;
   font-family: $font-regular;
+
+  background-image: url("../Assets/gray-bg.png");
+  background-position: center;
+  background-size: cover;
 }

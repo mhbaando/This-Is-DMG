@@ -1,7 +1,15 @@
 /*
   this file contains all our helper classes.
 */
+.mk__navHolder {
+  padding: 20px 17px;
+  box-shadow: 0px 3px 20px $shadow3;
+  background-color: $white;
 
+  @media (max-width: 768px) {
+    padding: 0 17px;
+  }
+}
 .section {
   // keeps our content from the edge
   padding: 0 30px;

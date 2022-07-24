@@ -1,13 +1,33 @@
+import { useState, useEffect } from "react";
 import Images from "../../Static";
 
 function Brand(): JSX.Element {
+  const [windowSize, setWindowSize] = useState<null | Number>(null);
+
+  useEffect(() => {
+    // extract the width from the window
+    const { innerWidth } = window;
+    function handleWindowResize() {
+      setWindowSize(innerWidth);
+    }
+    window.addEventListener("resize", handleWindowResize);
+
+    // clean up function
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, [windowSize]);
+
   return (
-    <div className="kt__brand">
-      <div className="kt__settingicon">
+    <div className="mk__brand">
+      <div className="mk__settingicon">
         <img src={Images.SettingIcon} alt="Setting Icon" />
       </div>
-      <div className="kt__logo">
-        <img src={Images.Logo} alt="Logo Icon" />
+      <div className="mk__logo">
+        <img
+          src={windowSize! > 768 ? Images.Logo : Images.ShortLogo}
+          alt="Logo Icon"
+        />
       </div>
     </div>
   );
