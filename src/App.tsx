@@ -1,8 +1,10 @@
+import { Nav } from "./Components";
 function App() {
   return (
     <>
-      <h1>Recommended Products</h1>
-      <p>selected filters</p>
+      <nav>
+        <Nav />
+      </nav>
     </>
   );
 }
