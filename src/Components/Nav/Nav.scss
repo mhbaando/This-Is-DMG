@@ -127,4 +127,23 @@
       }
     }
   }
+
+  // cart icon have a yellow circle behind it
+  .mk__cart {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20%;
+      right: 10%;
+
+      width: 10px;
+      height: 10px;
+
+      border-radius: 50%;
+      background-color: $orange;
+
+      border: 2px solid $white;
+    }
+  }
 }
