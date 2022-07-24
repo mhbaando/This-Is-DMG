@@ -1,0 +1,23 @@
+/* this file contains all our mixins */
+
+// flex mixin
+@mixin flex($jcontent, $aitems, $fdirection: row) {
+  display: flex;
+  justify-content: $jcontent;
+  align-items: $aitems;
+  flex-direction: $fdirection;
+}
+
+// font mixn
+@mixin font($size, $style: regular, $lheight: 100%) {
+  // define font styles based on the style parameter
+  @if $style == "bold" {
+    font-family: $font-bold;
+  } @else if $style == "italic" {
+    font-family: $font-italic;
+  } @else {
+    font-family: $font-regular;
+  }
+  font-size: $size;
+  line-height: $lheight;
+}

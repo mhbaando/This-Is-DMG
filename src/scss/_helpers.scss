@@ -1,0 +1,14 @@
+/*
+  this file contains all our helper classes.
+*/
+
+.section {
+  // keeps our content from the edge
+  padding: 0 30px;
+}
+
+.container {
+  // keeps our content into the center of the page no matter the screen size
+  max-width: 1366px;
+  margin: 0 auto;
+}
