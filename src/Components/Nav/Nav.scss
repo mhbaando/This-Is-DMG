@@ -8,10 +8,13 @@
   .mk__brand {
     @include flex(flex-start, center);
     gap: 21px;
-    flex: 1;
+    flex: 0.5;
 
     img {
       cursor: pointer;
+
+      // animation
+      @include scale-animation(0.95);
     }
   }
 
@@ -21,7 +24,7 @@
     flex: 2;
 
     form {
-      @include flex(space-between, center);
+      @include flex(center, center);
 
       position: relative;
       width: 525px;
@@ -71,6 +74,9 @@
         position: absolute;
         top: 5%;
         right: 0.5%;
+
+        // animation
+        @include scale-animation(0.95);
 
         @media (max-width: 750px) {
           position: relative;
@@ -125,6 +131,9 @@
           display: none;
         }
       }
+
+      // animation
+      @include scale-animation(0.92);
     }
   }
 

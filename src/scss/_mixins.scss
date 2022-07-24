@@ -21,3 +21,12 @@
   font-size: $size;
   line-height: $lheight;
 }
+
+// scale animation
+@mixin scale-animation($scale) {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale($scale);
+  }
+}

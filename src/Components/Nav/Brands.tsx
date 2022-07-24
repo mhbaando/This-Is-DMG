@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Images from "../../Static";
 
 function Brand(): JSX.Element {
-  const [windowSize, setWindowSize] = useState<null | Number>(null);
+  const [windowSize, setWindowSize] = useState<Number>();
 
   useEffect(() => {
     // extract the width from the window
@@ -25,7 +25,7 @@ function Brand(): JSX.Element {
       </div>
       <div className="mk__logo">
         <img
-          src={windowSize! > 768 ? Images.Logo : Images.ShortLogo}
+          src={windowSize! > 850 ? Images.Logo : Images.ShortLogo}
           alt="Logo Icon"
         />
       </div>
