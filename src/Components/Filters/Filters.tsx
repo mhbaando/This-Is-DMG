@@ -53,6 +53,8 @@ function Filters(): JSX.Element {
               <img src={Images.ArrowUp} alt="Arrow Up" style={imgStyle} />
             </div>
           </div>
+
+          {/* dropDown List */}
           <div className="mk__drobDownList" style={dropDownListStyle}>
             <ul>
               {options.map((option, index) => {
