@@ -3,9 +3,28 @@
 .mk__filters {
   margin-top: 20px !important;
   @include flex(space-between, center);
+  padding-bottom: 15px;
+
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+
+    width: 100%;
+    height: 0.5px;
+
+    background-color: $black;
+  }
 
   .mk__slectedFilters {
     position: relative;
+
+    // hide on mobile phone
+    @media (max-width: 630px) {
+      display: none;
+    }
+
     form {
       @include flex(space-between, center);
 
@@ -50,7 +69,14 @@
   // custom drop Down styles
   .mk__dropDown {
     position: relative;
+
+    z-index: 5;
     @include flex(flex-end, flex-end, column);
+
+    // hide on mobile phone
+    @media (max-width: 630px) {
+      display: none;
+    }
 
     .mk__DropHeader {
       @include flex(space-between, center);
@@ -66,7 +92,7 @@
         cursor: pointer;
         padding: 9px 16px 9px 15px;
 
-        width: 144px;
+        width: 154px;
         transition: all 0.3s ease-in-out;
 
         p {
@@ -86,7 +112,7 @@
 
     // DropDown List
     .mk__drobDownList {
-      width: 144px;
+      width: 154px;
       padding: 16px;
 
       transform-origin: top;
