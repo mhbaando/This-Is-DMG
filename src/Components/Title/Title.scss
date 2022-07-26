@@ -1,0 +1,15 @@
+@import "../../scss/mixins", "../../scss/variables";
+
+.mk__title {
+  margin-top: 31px !important;
+
+  h1 {
+    @include font(40px);
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+    @media (max-width: 365px) {
+      font-size: 20px;
+    }
+  }
+}

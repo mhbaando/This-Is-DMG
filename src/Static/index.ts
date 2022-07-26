@@ -11,6 +11,11 @@ import UserIcon from "../Assets/userIcon.png";
 import OrderIcon from "../Assets/ordericon.png";
 import Cart from "../Assets/cart-gray.png";
 
+import CancelBtn from "../Assets/cancel.png";
+
+import ArrowUp from "../Assets/up.png";
+import ArrowDwn from "../Assets/down.png";
+
 const Images = {
   SettingIcon,
   Logo,
@@ -20,6 +25,11 @@ const Images = {
   UserIcon,
   OrderIcon,
   Cart,
+
+  CancelBtn,
+
+  ArrowUp,
+  ArrowDwn,
 };
 
 export default Images;
