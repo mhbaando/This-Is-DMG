@@ -1,4 +1,11 @@
-import { Nav, Title, Filters, ProductSlider, Products } from "./Components";
+import {
+  Nav,
+  Title,
+  Filters,
+  ProductSlider,
+  Products,
+  LoadMore,
+} from "./Components";
 function App() {
   return (
     <>
@@ -8,6 +15,7 @@ function App() {
         <Filters />
         <ProductSlider />
         <Products />
+        <LoadMore />
       </nav>
     </>
   );

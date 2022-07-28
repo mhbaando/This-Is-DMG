@@ -1,0 +1,19 @@
+@import "../../scss/variables", "../../scss/mixins";
+
+.mk__loadMore {
+  @include flex(center, center);
+  margin: 20px;
+
+  padding: 16px 0;
+  border: 1px solid;
+  border-radius: 80px;
+
+  cursor: pointer;
+  box-shadow: 6px 6px 16px $shadow0;
+
+  @include scale-animation(0.95);
+
+  p {
+    @include font(20px);
+  }
+}

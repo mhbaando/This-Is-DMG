@@ -16,3 +16,6 @@ export { default as ProductSlider } from "./ProductSlider/ProductSlider";
 
 // Other porducts
 export { default as Products } from "./Products/Products";
+
+// Loader More Result COmponent
+export { default as LoadMore } from "./LoadMore/LoadMore";
