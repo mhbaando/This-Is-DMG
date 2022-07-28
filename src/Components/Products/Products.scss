@@ -1,0 +1,130 @@
+@import "../../scss/variables", "../../scss/mixins";
+
+.mk__Oproducts {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  margin-top: 20px !important;
+
+  @media (min-width: 780px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  @media (min-width: 1224px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.mk__Oproduct {
+  background-color: $white;
+  margin-top: 20px !important;
+  padding: 16px 19px;
+
+  @media (min-width: 1224px) {
+    display: none;
+  }
+}
+
+.OproductData {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-rows: auto;
+  align-items: center;
+}
+
+.OproductData .left {
+  @include flex(flex-start, center);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.OproductData .left .title {
+  display: block;
+  width: 100%;
+
+  h2 {
+    @include font(20px, bold, 30px);
+    text-decoration: underline;
+  }
+}
+
+.OproductData .left .oeLogo {
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.OproductData .left .stock {
+  p {
+    @include font(16px, regular, 25px);
+  }
+}
+
+.OproductData .left .stock {
+  div {
+    @include flex(flex-start, flex-start);
+    p {
+      margin-right: 10px;
+    }
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+// right side of the component
+.OproductData .right {
+  @include flex(flex-start, flex-start);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.OproductData .right .model {
+  width: 100%;
+  p {
+    @include font(20px, regular, 30px);
+
+    &:last-child {
+      line-height: 100%;
+    }
+  }
+}
+
+.OproductData .right .price {
+  p,
+  h2 {
+    @include font(20px);
+  }
+  h2 {
+    margin-top: 10px;
+  }
+}
+
+.OproductData .right .total {
+  p {
+    @include font(20px);
+    span {
+      @include font(18px, bold);
+    }
+    &:last-child {
+      @include font(20px, bold);
+
+      margin-top: 10px;
+      color: #8e1216;
+    }
+  }
+}
+
+.mk__Oproduct .buttons {
+  .addToCart {
+    p {
+      display: inline-block;
+    }
+  }
+}

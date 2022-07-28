@@ -16,6 +16,14 @@ import CancelBtn from "../Assets/cancel.png";
 import ArrowUp from "../Assets/up.png";
 import ArrowDwn from "../Assets/down.png";
 
+import CartBlack from "../Assets/cart.png";
+import Tire from "../Assets/Tier.png";
+import OELogo from "../Assets/OElogo.svg";
+
+import Tick from "../Assets/tick.png";
+import Danger from "../Assets/danger.png";
+import Warning from "../Assets/warnning.png";
+
 const Images = {
   SettingIcon,
   Logo,
@@ -30,6 +38,14 @@ const Images = {
 
   ArrowUp,
   ArrowDwn,
+
+  CartBlack,
+  Tire,
+  OELogo,
+
+  Tick,
+  Warning,
+  Danger,
 };
 
 export default Images;

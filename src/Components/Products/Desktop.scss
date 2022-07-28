@@ -1,0 +1,113 @@
+@import "../../scss/variables", "../../scss/mixins";
+
+// dekstp Version
+.mk__DProducts {
+  display: none;
+  background-color: $white;
+
+  @media (min-width: 1224px) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+
+    padding: 10px 25px;
+    align-items: center;
+  }
+}
+
+.mk__DProducts .title {
+  h2 {
+    @include font(18px, regular, 25px);
+    text-decoration: underline;
+  }
+}
+
+.mk__DProducts .oeLogo {
+  @include flex(center, center);
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.mk__DProducts .stock {
+  @include flex(space-between, flex-start, column);
+  gap: 8px;
+
+  div {
+    @include flex(space-between, flex-end);
+    gap: 10px;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.mk__DProducts .plusMinusBtn {
+  @include flex(center, center);
+
+  button {
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+    outline: none;
+
+    border: 0.5px solid $gray3;
+    background-color: transparent;
+
+    @include font(20px, regular);
+  }
+
+  input {
+    width: 40px;
+    height: 40px;
+
+    @include font(22px);
+    text-align: center;
+    background-color: $gray1;
+
+    border: none;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.mk__DProducts .total {
+  @include flex(center, center);
+
+  p {
+    @include font(18px);
+    &:last-child {
+      display: none;
+    }
+  }
+}
+.mk__DProducts .addToCart {
+  @include flex(center, center);
+
+  button {
+    @include flex(space-between, center);
+
+    cursor: pointer;
+    background-color: $orange;
+
+    padding: 10px 25px;
+    border-radius: 48px;
+
+    border: none;
+    outline: none;
+
+    img {
+      width: 45px;
+    }
+
+    p {
+      display: none;
+    }
+  }
+}

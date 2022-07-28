@@ -1,0 +1,223 @@
+@import "../../scss/variables", "../../scss/mixins";
+
+.mk__products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1;
+  grid-gap: 17px;
+
+  width: 100%;
+  margin-top: 4px !important;
+
+  overflow-x: scroll;
+
+  height: 300px;
+  padding-top: 15px;
+}
+
+.scroll-container {
+  border: 1px solid red;
+}
+
+.mk__product {
+  @include flex(space-between, flex-start, column);
+
+  position: relative;
+  background-color: $white;
+
+  min-width: 350px;
+  box-shadow: 1px 1px 20px $shadow0;
+  cursor: grab;
+}
+
+.label {
+  position: absolute;
+  top: -5%;
+  left: 0%;
+
+  padding: 5px 24px;
+  background-color: $orange;
+
+  p {
+    @include font(16px, bold, 21px);
+  }
+}
+
+.productDataHolder {
+  // mobile first design
+  @include flex(space-between, flex-end, column);
+
+  width: 100%;
+  margin-top: 30px;
+
+  padding: 0 15px;
+}
+
+.productData {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  grid-gap: 5px;
+  width: 100%;
+  align-items: center;
+}
+
+// main Images Tire
+.productData .mainImg {
+  img {
+    width: 120px;
+    @media (min-width: 1024px) {
+      width: 150px;
+    }
+  }
+}
+
+// Text Data on the Lef Side
+.productData .actualData {
+  @include flex(space-between, flex-start, column);
+}
+
+// Title
+.productData .actualData .title {
+  margin-bottom: 10px;
+  h2 {
+    @include font(18px, bold, 25px);
+    text-decoration: underline;
+
+    @media (min-width: 1024px) {
+      @include font(23px, bold, 25px);
+    }
+  }
+}
+
+.actualData .datatext {
+  width: 100%;
+  @include flex(flex-start, center);
+
+  flex-wrap: wrap;
+
+  @media (min-width: 1202px) {
+    justify-content: space-between;
+  }
+}
+
+.datatext .secImage {
+  margin-right: 12px;
+  // margin-bottom: 18px;
+
+  img {
+    width: 69px;
+  }
+  @media (min-width: 1024px) {
+    margin-bottom: 0;
+
+    img {
+      width: 80px;
+    }
+  }
+}
+
+.datatext .model {
+  margin-right: 15px;
+  @include font(16px, italic);
+  font-weight: bold;
+
+  p:last-child {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  @media (min-width: 1024px) {
+    @include font(18px, italic);
+  }
+}
+
+.datatext .stock {
+  @include flex(ceneter, center, column);
+  margin-right: 15px;
+
+  @media (min-width: 915px) {
+    align-items: flex-start;
+  }
+
+  @media (min-width: 1024px) {
+    @include font(18px, italic);
+  }
+
+  p {
+    @include font(16, italic);
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .stockData {
+    @media (min-width: 961px) {
+      @include flex(spce-between, cneter);
+      gap: 10px;
+    }
+    @media (max-width: 915px) {
+      flex-direction: column;
+    }
+  }
+
+  .stockPrice {
+    @include flex(space-between, center);
+    gap: 10px;
+    p {
+      margin: 0;
+    }
+    @media (max-width: 960px) {
+      display: none;
+    }
+  }
+}
+
+.datatext .price {
+  margin-right: 15px;
+  p {
+    @include font(16, italic);
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    @include font(17px);
+  }
+
+  @media (min-width: 961px) {
+    display: none;
+  }
+}
+
+.datatext .total {
+  @media (min-width: 1024px) {
+    @include font(18px, italic);
+  }
+  p {
+    @include font(16, italic);
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    @include font(20px, bold);
+  }
+}
+
+.buttons {
+  @include flex(space-between, center);
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.buttons .addToCart {
+  button {
+    @include flex(space-between, center);
+  }
+}

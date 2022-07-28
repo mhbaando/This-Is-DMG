@@ -1,4 +1,4 @@
-import { Nav, Title, Filters } from "./Components";
+import { Nav, Title, Filters, ProductSlider, Products } from "./Components";
 function App() {
   return (
     <>
@@ -6,6 +6,8 @@ function App() {
         <Nav />
         <Title />
         <Filters />
+        <ProductSlider />
+        <Products />
       </nav>
     </>
   );

@@ -1,0 +1,68 @@
+@import "../../scss/variables", "../../scss/mixins";
+
+.buttons {
+  width: 80%;
+  margin: 13px 0;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+
+  .plusMinusBtn {
+    button {
+      width: 40px;
+      height: 40px;
+
+      cursor: pointer;
+      outline: none;
+
+      border: 0.5px solid $gray3;
+      background-color: transparent;
+
+      @include font(20px, regular);
+    }
+
+    input {
+      width: 40px;
+      height: 40px;
+
+      @include font(22px);
+      text-align: center;
+      background-color: $gray1;
+
+      border: none;
+      outline: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.buttons .addToCart {
+  button {
+    @include flex(space-between, center);
+
+    cursor: pointer;
+    background-color: $orange;
+
+    padding: 10px 25px;
+    border-radius: 48px;
+
+    border: none;
+    outline: none;
+
+    img {
+      width: 45px;
+    }
+
+    p {
+      @include font(17px, bold);
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+}
