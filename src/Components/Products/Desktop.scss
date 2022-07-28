@@ -131,3 +131,13 @@
     }
   }
 }
+
+.mk__DProducts .addToCart .notifyme {
+  background-color: transparent;
+  border: 1px solid $orange;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}

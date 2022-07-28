@@ -23,6 +23,7 @@ import OELogo from "../Assets/OElogo.svg";
 import Tick from "../Assets/tick.png";
 import Danger from "../Assets/danger.png";
 import Warning from "../Assets/warnning.png";
+import Bell from "../Assets/bell.svg";
 
 const Images = {
   SettingIcon,
@@ -46,6 +47,7 @@ const Images = {
   Tick,
   Warning,
   Danger,
+  Bell,
 };
 
 export default Images;

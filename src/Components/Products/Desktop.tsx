@@ -58,10 +58,16 @@ function Desktop(props: Props): JSX.Element {
 
       {/* Cart */}
       <div className="addToCart">
-        <button type="button">
-          <img src={Images.CartBlack} alt="Cart Icon" />
-          <p>Add To Cart</p>
-        </button>
+        {props.itemsLef === "Back in 1 week!" ? (
+          <button type="button" className="notifyme">
+            <img src={Images.Bell} alt="Notify Me" />
+          </button>
+        ) : (
+          <button type="button">
+            <img src={Images.CartBlack} alt="Cart Icon" />
+            <p>Add To Cart</p>
+          </button>
+        )}
       </div>
     </div>
   );
