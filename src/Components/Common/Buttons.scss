@@ -13,7 +13,7 @@
       width: 40px;
       height: 40px;
 
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         width: 30px;
         height: 30px;
       }
@@ -30,7 +30,7 @@
       width: 40px;
       height: 40px;
 
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         width: 30px;
         height: 30px;
       }
@@ -59,8 +59,8 @@
     padding: 10px 25px;
     border-radius: 48px;
 
-    @media (max-width: 400px) {
-      padding: 10px;
+    @media (max-width: 450px) {
+      padding: 5px 15px;
     }
 
     border: none;
@@ -76,7 +76,7 @@
     p {
       @include font(17px);
 
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         font-size: 14px;
       }
 

@@ -51,7 +51,7 @@
     @include font(20px, bold, 30px);
     text-decoration: underline;
 
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       font-size: 16px;
       line-height: 25px;
     }
@@ -63,7 +63,7 @@
     width: 70px;
     height: 70px;
 
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       width: 40px;
       height: 40px;
     }
@@ -74,7 +74,7 @@
   p {
     @include font(16px, regular, 25px);
 
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       font-size: 14px;
       line-height: 20px;
     }
@@ -105,7 +105,7 @@
   width: 100%;
   p {
     @include font(20px, regular, 30px);
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       font-size: 16px;
     }
 
@@ -119,8 +119,8 @@
   p,
   h2 {
     @include font(20px);
-    @media (max-width: 400px) {
-      font-size: 14px;
+    @media (max-width: 450px) {
+      font-size: 15px;
       line-height: 12px;
     }
   }
@@ -136,18 +136,18 @@
       @include font(18px, bold);
     }
 
-    @media (max-width: 400px) {
-      font-size: 14px;
+    @media (max-width: 450px) {
+      font-size: 15px;
       span {
-        font-size: 14px;
+        font-size: 15px;
       }
     }
 
     &:last-child {
       @include font(20px, bold);
 
-      @media (max-width: 400px) {
-        font-size: 14px;
+      @media (max-width: 450px) {
+        font-size: 15px;
         line-height: 12px;
       }
 
