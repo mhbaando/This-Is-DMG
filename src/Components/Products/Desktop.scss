@@ -29,6 +29,13 @@
   }
 }
 
+.mk__DProducts .model {
+  p {
+    @include font(18px);
+    line-height: 25px;
+  }
+}
+
 .mk__DProducts .stock {
   @include flex(space-between, flex-start, column);
   gap: 8px;
@@ -37,6 +44,9 @@
     @include flex(space-between, flex-end);
     gap: 10px;
 
+    p {
+      @include font(20px);
+    }
     img {
       width: 25px;
       height: 25px;
@@ -44,6 +54,16 @@
   }
 }
 
+.mk__DProducts .price {
+  @include flex(center, center);
+  gap: 10px;
+  p {
+    @include font(20px);
+  }
+  h2 {
+    font-weight: normal;
+  }
+}
 .mk__DProducts .plusMinusBtn {
   @include flex(center, center);
 

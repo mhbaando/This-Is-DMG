@@ -32,18 +32,6 @@ function Card(props: Props): JSX.Element {
         </div>
         <Buttons />
       </div>
-      {/* Desktop Design */}
-      <Desktop
-        title={props.title}
-        Model={props.Model}
-        img={props.img}
-        price={props.price}
-        total={props.total}
-        discount={props.discount}
-        itemsLef={props.itemsLef}
-        inStock={props.inStock}
-        icon={props.icon}
-      />
     </>
   );
 }
