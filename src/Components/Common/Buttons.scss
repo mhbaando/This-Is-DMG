@@ -13,6 +13,10 @@
       width: 40px;
       height: 40px;
 
+      @media (max-width: 400px) {
+        width: 30px;
+        height: 30px;
+      }
       cursor: pointer;
       outline: none;
 
@@ -25,6 +29,11 @@
     input {
       width: 40px;
       height: 40px;
+
+      @media (max-width: 400px) {
+        width: 30px;
+        height: 30px;
+      }
 
       @include font(22px);
       text-align: center;
@@ -50,15 +59,26 @@
     padding: 10px 25px;
     border-radius: 48px;
 
+    @media (max-width: 400px) {
+      padding: 10px;
+    }
+
     border: none;
     outline: none;
 
     img {
       width: 45px;
+      @media (max-width: 400px) {
+        width: 32px;
+      }
     }
 
     p {
-      @include font(17px, bold);
+      @include font(17px);
+
+      @media (max-width: 400px) {
+        font-size: 14px;
+      }
 
       @media (max-width: 767px) {
         display: none;

@@ -34,6 +34,7 @@
 
   grid-template-rows: auto;
   align-items: center;
+  grid-gap: 10px;
 }
 
 .OproductData .left {
@@ -49,6 +50,11 @@
   h2 {
     @include font(20px, bold, 30px);
     text-decoration: underline;
+
+    @media (max-width: 400px) {
+      font-size: 16px;
+      line-height: 25px;
+    }
   }
 }
 
@@ -56,12 +62,22 @@
   img {
     width: 70px;
     height: 70px;
+
+    @media (max-width: 400px) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
 .OproductData .left .stock {
   p {
     @include font(16px, regular, 25px);
+
+    @media (max-width: 400px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -89,6 +105,9 @@
   width: 100%;
   p {
     @include font(20px, regular, 30px);
+    @media (max-width: 400px) {
+      font-size: 16px;
+    }
 
     &:last-child {
       line-height: 100%;
@@ -100,6 +119,10 @@
   p,
   h2 {
     @include font(20px);
+    @media (max-width: 400px) {
+      font-size: 14px;
+      line-height: 12px;
+    }
   }
   h2 {
     margin-top: 10px;
@@ -112,8 +135,21 @@
     span {
       @include font(18px, bold);
     }
+
+    @media (max-width: 400px) {
+      font-size: 14px;
+      span {
+        font-size: 14px;
+      }
+    }
+
     &:last-child {
       @include font(20px, bold);
+
+      @media (max-width: 400px) {
+        font-size: 14px;
+        line-height: 12px;
+      }
 
       margin-top: 10px;
       color: #8e1216;
