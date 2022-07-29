@@ -1,24 +1,16 @@
 @import "../../scss/variables", "../../scss/mixins";
 
+// Product slider Holder
 .mk__products {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1;
-  grid-gap: 17px;
-
-  width: 100%;
-  margin-top: 4px !important;
-
-  overflow-x: scroll;
-
-  height: 300px;
-  padding-top: 15px;
+  margin-top: 15px !important;
 }
 
-.scroll-container {
-  border: 1px solid red;
+// Swiper
+.mk__productSwiper {
+  padding-top: 15px !important;
 }
 
+// single Product
 .mk__product {
   @include flex(space-between, flex-start, column);
 
@@ -27,23 +19,25 @@
 
   min-width: 350px;
   box-shadow: 1px 1px 20px $shadow0;
-  cursor: grab;
 }
 
-.label {
+//  yello Label
+.mk__product .label {
   position: absolute;
-  top: -5%;
+  top: -4%;
   left: 0%;
 
   padding: 5px 24px;
   background-color: $orange;
 
   p {
-    @include font(16px, bold, 21px);
+    @include font(18px);
+    font-weight: bold;
   }
 }
 
-.productDataHolder {
+// single Product Data Holder
+.mk__product .productDataHolder {
   // mobile first design
   @include flex(space-between, flex-end, column);
 
@@ -53,7 +47,8 @@
   padding: 0 15px;
 }
 
-.productData {
+// All Product Data
+.productDataHolder .productData {
   display: grid;
   grid-template-columns: 1fr 3fr;
 
@@ -62,7 +57,7 @@
   align-items: center;
 }
 
-// main Images Tire
+// Main Image Tire
 .productData .mainImg {
   img {
     width: 120px;
@@ -77,8 +72,7 @@
   @include flex(space-between, flex-start, column);
 }
 
-// Title
-.productData .actualData .title {
+.actualData .title {
   margin-bottom: 10px;
   h2 {
     @include font(18px, bold, 25px);
@@ -90,21 +84,19 @@
   }
 }
 
+// Inside Text Section
 .actualData .datatext {
   width: 100%;
   @include flex(flex-start, center);
-
   flex-wrap: wrap;
-
   @media (min-width: 1202px) {
     justify-content: space-between;
   }
 }
 
+// OE Logo
 .datatext .secImage {
   margin-right: 12px;
-  // margin-bottom: 18px;
-
   img {
     width: 69px;
   }
@@ -117,6 +109,7 @@
   }
 }
 
+// Model Nomber
 .datatext .model {
   margin-right: 15px;
   @include font(16px, italic);
@@ -132,6 +125,7 @@
   }
 }
 
+// Stock
 .datatext .stock {
   @include flex(ceneter, center, column);
   margin-right: 15px;
@@ -154,21 +148,25 @@
     height: 14px;
   }
 
+  // Stock Data
   .stockData {
-    @media (min-width: 961px) {
-      @include flex(spce-between, cneter);
-      gap: 10px;
-    }
-    @media (max-width: 915px) {
-      flex-direction: column;
-    }
-  }
-
-  .stockPrice {
     @include flex(space-between, center);
     gap: 10px;
     p {
       margin: 0;
+    }
+    @media (max-width: 960px) {
+      flex-direction: column;
+    }
+  }
+
+  // stock price
+  .stockPrice {
+    @include flex(space-between, center);
+    // gap: 10px;
+
+    p {
+      margin-top: 10px;
     }
     @media (max-width: 960px) {
       display: none;
@@ -176,6 +174,7 @@
   }
 }
 
+// price
 .datatext .price {
   margin-right: 15px;
   p {
@@ -193,6 +192,7 @@
   }
 }
 
+// Total
 .datatext .total {
   @media (min-width: 1024px) {
     @include font(18px, italic);

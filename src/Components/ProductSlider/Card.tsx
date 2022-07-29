@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Images from "../../Static";
 import Buttons from "../Common/Buttons";
 
@@ -43,6 +42,7 @@ function Card(props: Props): JSX.Element {
                 <p>SUV</p>
               </div>
 
+              {/* stock */}
               <div className="stock">
                 <div className="stockData">
                   <p>Stock</p>
