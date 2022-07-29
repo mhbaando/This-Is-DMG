@@ -1,6 +1,6 @@
 # About this Repo
 
-this is a test project for my recent application with This is DMG! Company, after my initail interview, i got this assesment and i have to complete it with in 7 days
+This is a test project for my recent application with This is DMG! Company, after my initail interview, i got this assesment and i have to complete it with in 7 days
 and here i did it, you can tak a look at the lateste screen shots
 
 ## Screen shots
